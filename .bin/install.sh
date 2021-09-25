@@ -46,15 +46,12 @@ while [ $# -gt 0 ];do
   shift
 done
 
-<<<<<<< HEAD
 apt update
 apt install zsh curl -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 apt install exa
 apt install peco
 
-=======
->>>>>>> 9c148a749be505407002007550f5edb4823e6a66
 link_to_homedir
 git config --global include.path "~/.gitconfig_shared"
 command echo -e "\e[1;36m Install completed!!!! \e[m"
