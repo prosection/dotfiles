@@ -47,8 +47,10 @@ while [ $# -gt 0 ];do
 done
 
 sudo apt update
-sudo apt install zsh curl exa peco -y
+sudo apt install zsh curl peco -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+sh -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)"
+cargo install exa
 
 link_to_homedir
 git config --global include.path "~/.gitconfig_shared"

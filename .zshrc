@@ -80,11 +80,6 @@ alias -g GI='| grep -ri'
 
 
 # エイリアス
-#alias lst='ls -ltr --color=auto'
-#alias l='ls -ltr --color=auto'
-#alias la='ls -la --color=auto'
-#alias ll='ls -l --color=auto'
-alias ls='exa -al --icons'
 alias so='source'
 alias v='vim'
 alias vi='vim'
@@ -100,6 +95,20 @@ alias back='pushd'
 alias diff='diff -U1'
 
 alias reload='source ~/.zshrc' # .zshrc編集中は多用してます
+
+if [[ $(command -v exa) ]]; then
+  alias e='exa --icons'
+  alias l=e
+  alias ls=e
+  alias ea='exa -a --icons'
+  alias la=ea
+  alias ee='exa -aal --icons'
+  alias ll=ee
+  alias et='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
+  alias lt=et
+  alias eta='exa -T -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
+  alias lta=eta
+fi
 
 # git
 alias gitpush='GIT_SSH_COMMAND='ssh -i ~/.ssh/github/id_rsa' git push git@github.com:hogehoge/dotfiles.git'
