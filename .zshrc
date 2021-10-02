@@ -81,9 +81,9 @@ alias -g GI='| grep -ri'
 
 # エイリアス
 alias so='source'
-alias v='vim'
-alias vi='vim'
-alias vz='vim ~/.zshrc'
+alias v='nvim'
+alias vi='nvim'
+alias vz='nvim ~/.zshrc'
 alias c='cdr'
 # historyに日付を表示
 alias h='fc -lt '%F %T' 1'

@@ -47,7 +47,7 @@ while [ $# -gt 0 ];do
 done
 
 sudo apt update
-sudo apt install zsh curl peco -y
+sudo apt install zsh curl peco neovim -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 sudo chsh -s /usr/bin/zsh
