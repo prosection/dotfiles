@@ -7,6 +7,9 @@ export LANG=ja_JP.UTF-8
 # パスを追加したい場合
 export PATH="$HOME/bin:$PATH"
 
+# NeoVimの設定ファイルをdotfiles内にする
+export XDG_CONFIG_HOME=$HOME/dotfiles
+
 # 色を使用
 #autoload -Uz colors
 #colors
