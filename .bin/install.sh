@@ -48,10 +48,19 @@ done
 
 sudo apt update
 sudo apt install zsh curl peco neovim -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
-sudo chsh -s /usr/bin/zsh
+zshpath = `which zsh`
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+sh -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)"
+source ~/.cargo/env
+cargo install exa
+
+sudo chsh -s $zshpath
 
 link_to_homedir
 git config --global include.path "~/.gitconfig_shared"
+
+exec $SHELL -l
+
 command echo -e "\e[1;36m Install completed!!!! \e[m"
