@@ -52,7 +52,7 @@ sudo apt install zsh curl peco neovim -y
 zshpath=`which zsh`
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-bash -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)"
+bash "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)"
 source ~/.cargo/env
 cargo install exa
 
