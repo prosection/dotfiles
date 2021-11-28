@@ -51,7 +51,7 @@ sudo apt install zsh curl peco neovim -y
 
 zshpath=`which zsh`
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+sh -c "$(curl -fsSL https://git.io/zinit-install)"
 
 chsh -s $zshpath
 
