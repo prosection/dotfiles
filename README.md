@@ -1,6 +1,7 @@
 # dotfiles
 
-##memo
+## memo
+
 ŽŽsöŒë‚µ‚È‚ª‚ç\’z’†
 
 Cargo“ü‚ê‚Ä‚©‚çExa“ü‚ê‚é
