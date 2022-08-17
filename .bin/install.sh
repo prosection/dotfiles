@@ -46,12 +46,13 @@ while [ $# -gt 0 ];do
   shift
 done
 
-sudo dnf update
-sudo dnf install zsh curl util-linux-user -y
+sudo apt update
+sudo apt install zsh curl peco neovim -y
 
 zshpath=`which zsh`
 
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 chsh -s $zshpath
 
