@@ -228,10 +228,10 @@ autoload -Uz _zinit
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-      zdharma-continuum / za-rust \ 
-      zdharma-continuum / za-patch-dl \ 
-      zdharma-continuum / za-as-monitor \ 
-      zdharma-continuum / za-bin -gem-node
+      zdharma-continuum/z-a-rust \
+      zdharma-continuum/z-a-as-monitor \
+      zdharma-continuum/z-a-patch-dl \
+      zdharma-continuum/z-a-bin-gem-node
 
 zinit load "zsh-users/zsh-syntax-highlighting"
 zinit load "zsh-users/zsh-completions"
