@@ -98,6 +98,7 @@ alias back='pushd'
 alias diff='diff -U1'
 
 alias reload='source ~/.zshrc' # .zshrc編集中は多用してます
+alias update='sudo apt update;sudo apt upgrade -y'
 
 if [[ $(command -v exa) ]]; then
   alias e='exa --icons'
