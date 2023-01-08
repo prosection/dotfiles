@@ -98,6 +98,7 @@ alias back='pushd'
 alias diff='diff -U1'
 
 alias reload='source ~/.zshrc' # .zshrc編集中は多用してます
+alias update='sudo apt update;sudo apt upgrade -y'
 
 if [[ $(command -v exa) ]]; then
   alias e='exa --icons'
@@ -228,10 +229,10 @@ autoload -Uz _zinit
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-      zdharma-continuum / za-rust \ 
-      zdharma-continuum / za-patch-dl \ 
-      zdharma-continuum / za-as-monitor \ 
-      zdharma-continuum / za-bin -gem-node
+      zdharma-continuum/z-a-rust \
+      zdharma-continuum/z-a-as-monitor \
+      zdharma-continuum/z-a-patch-dl \
+      zdharma-continuum/z-a-bin-gem-node
 
 zinit load "zsh-users/zsh-syntax-highlighting"
 zinit load "zsh-users/zsh-completions"
