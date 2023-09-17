@@ -47,7 +47,7 @@ while [ $# -gt 0 ];do
 done
 
 sudo apt update
-sudo apt install zsh curl peco neovim -y
+sudo apt install zsh curl peco neovim fontconfig -y
 
 zshpath=`which zsh`
 
