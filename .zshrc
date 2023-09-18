@@ -58,7 +58,7 @@ setopt share_history
 # ヒストリーに重複を表示しない
 setopt histignorealldups
 
-HISTFILE=/home/end/.bash_history
+HISTFILE=$HOME/.bash_history
 HISTSIZE=10000
 SAVEHIST=10000
 

@@ -46,9 +46,11 @@ while [ $# -gt 0 ];do
   shift
 done
 
+# 必要パッケージのインストール
 sudo apt update
-sudo apt install zsh curl peco neovim fontconfig -y
+sudo apt install zsh git curl peco neovim fontconfig -y
 
+# zshのインストールと設定
 zshpath=`which zsh`
 
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
