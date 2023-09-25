@@ -50,10 +50,6 @@ done
 sudo apt update
 sudo apt install zsh git curl peco neovim fontconfig -y
 
-# dein.vimのインストール
-curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh > installer.sh
-sh ./installer.sh
-
 # zshのインストールと設定
 zshpath=`which zsh`
 
