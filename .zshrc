@@ -114,6 +114,18 @@ if [[ $(command -v exa) ]]; then
   alias lta=eta
 fi
 
+if [[ $(command -v duf) ]]; then
+  alias df=duf
+fi
+
+if [[ $(command -v batcat) ]]; then
+  alias cat=batcat
+fi
+
+if [[ $(command -v xsel) ]]; then
+  alias pbcopy='xsel --clipboard --input'
+fi
+
 # git
 alias gitpush='GIT_SSH_COMMAND='ssh -i ~/.ssh/github/id_rsa' git push git@github.com:hogehoge/dotfiles.git'
 alias gitpull='GIT_SSH_COMMAND='ssh -i ~/.ssh/github/id_rsa' git pull git@github.com:hogehoge/dotfiles.git'
