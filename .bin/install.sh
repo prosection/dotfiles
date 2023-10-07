@@ -48,7 +48,7 @@ done
 
 # 必要パッケージのインストール
 sudo apt update
-sudo apt install zsh git curl peco neovim fontconfig exa duf bat xsel -y
+sudo apt install zsh git curl peco neovim fontconfig exa bat xsel -y
 
 # zshのインストールと設定
 zshpath=`which zsh`
