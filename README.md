@@ -4,8 +4,10 @@
 
 試行錯誤しながら構築中
 
-neovim関連で迷走中。  
-エラー出てる。
+## Branch
+
+* main : Ubuntu
+* raspberrypi : raspberry pi
 
 Cargo入れてからExa入れる
 
